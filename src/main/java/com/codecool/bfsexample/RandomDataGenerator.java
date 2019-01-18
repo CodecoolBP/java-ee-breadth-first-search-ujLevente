@@ -13,7 +13,8 @@ class RandomDataGenerator {
             "Inez", "Emery", "Virginia", "Charissa", "Tyrone", "Ayanna", "Jena", "Ora",
             "Cooper", "Gareth", "Karleigh", "Aladdin", "Arden", "Pearl", "Mariko", "Hadley",
             "Tanya", "Madeline", "Naomi", "Maggie", "Kerry", "Elmo", "Wylie", "Alec",
-            "Axel", "Belle", "Cally", "Theodore", "Emmanuel", "Christopher", "Olympia"};
+            "Axel", "Belle", "Cally", "Theodore", "Emmanuel", "Christopher", "Olympia"
+    };
 
     private String[] lastNames =  {
             "Winifred", "Tanner", "Rajah", "Cedric", "Tyler", "Nicholas", "Abra", "Aurora",
@@ -27,6 +28,7 @@ class RandomDataGenerator {
         UserNode firstUser = genNewUser();
         users.add(firstUser);
         // first generate and connect users in a star shaped tree
+        //Todo change back to 4
         genTree(firstUser, users, 4);
         // then introduce some loops
         for (int i = 0; i < users.size() - 30; i++) {
